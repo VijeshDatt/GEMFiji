@@ -11,7 +11,7 @@
         </v-btn>
       </transition>
       <transition name="slidereverse" mode="out-in">
-        <router-view @message="message"></router-view>
+        <router-view @message="message" :scrollPosition="scrollPosition"></router-view>
       </transition>
     </v-main>
     <!-- End of main component -->
@@ -46,6 +46,7 @@ export default {
       snackbar: false,
       text: '',
       title: '',
+      scrollPosition: null,
       // routeCheck: false,
     };
   },
@@ -62,9 +63,8 @@ export default {
 
   methods: {
     onScroll() {
-      const currentScrollPosition =
-        window.pageYOffset || document.documentElement.scrollTop;
-      this.visible = currentScrollPosition > 200;
+      this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+      this.visible = this.scrollPosition > 200;
     },
 
     message(value) {

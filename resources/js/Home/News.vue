@@ -7,26 +7,18 @@
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
-          <masonry :cols="{default: 4, 1000: 3, 700: 2, 500: 1}" :gutter="30">
-            <div v-for="(item, index) in items" :key="index">
+          <masonry :cols="{default: 4, 1000: 3, 700: 2, 500: 1}" :gutter="25">
+            <div v-for="(item, index) in items" :key="item.id">
               <v-hover>
                 <template v-slot="{hover}">
-                  <v-card outlined class="my-6 transition-swing rounded-lg" :elevation="hover ? 6 : 0">
+                  <v-card outlined class="my-6 transition-swing rounded-lg animate__animated animate__fadeIn animate__faster" :style="`animation-delay:${index/50}s`" :elevation="hover ? 6 : 0">
                     <v-card-title>
                       <h2>{{item.title}}</h2>
                     </v-card-title>
                     <v-divider inset></v-divider>
                     <v-card-text>{{item.short_desc}}</v-card-text>
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-tooltip top>
-                        <template v-slot:activator="{ on, attrs }">
-                          <v-btn icon color="primary" dark v-bind="attrs" v-on="on" @click="loadArticle(item)">
-                            <v-icon>mdi-dots-horizontal</v-icon>
-                          </v-btn>
-                        </template>
-                        <span>Read More</span>
-                      </v-tooltip>
+                    <v-card-actions class="grey lighten-5">
+                      <v-btn text color="primary" class="rounded-lg d-flex flex-grow-1" @click="loadArticle(item)">Read More</v-btn>
                     </v-card-actions>
                   </v-card>
                 </template>
@@ -147,11 +139,19 @@ export default {
     };
   },
 
+  props: {
+    scrollPosition: { type: Number, default: 0 },
+  },
+
   methods: {
     loadArticle(item) {
       this.selected = item;
       this.dialog = true;
     },
+  },
+
+  created() {
+    if (this.scrollPosition != 0) this.$vuetify.goTo(0);
   },
 }
 </script>

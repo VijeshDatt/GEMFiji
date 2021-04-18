@@ -14,7 +14,7 @@
         <!-- <v-divider vertical inset></v-divider> -->
         <v-menu offset-y transition="slide-y-transition" rounded="t-0 b-lg" open-on-hover>
           <template v-slot:activator="{ on: onMenu }">
-            <v-btn text v-on="onMenu" @click="$route.name != 'Home' ? $router.push({ name: 'Home' }) : $vuetify.goTo('#subsidiaries')">
+            <v-btn text active-class="primary--text" v-on="onMenu" @click="$route.name != 'Home' ? $router.push({ name: 'Home' }) : $vuetify.goTo('#subsidiaries')">
               Subsidiaries
               <v-icon right>mdi-chevron-down</v-icon>
             </v-btn>

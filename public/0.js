@@ -67,17 +67,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {};
@@ -101,7 +90,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.fixed-position-text {\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin-left: 20%;\n  margin-top: 10rem;\n  font-size: 3.5em;\n  z-index: 1;\n}\n.fixed-position-image {\n  position: absolute;\n  top: 0;\n  left: 0;\n  margin-left: 20%;\n  margin-top: 15rem;\n  font-size: 3.5em;\n  z-index: 1;\n}\n.fixed-position-jumbo {\n  top: 0;\n  right: 0;\n  margin-left: 20%;\n  margin-top: 10rem;\n  font-size: 3.5em;\n  width: 70vw;\n}\n", ""]);
+exports.push([module.i, "\n.fixed-position-text {\n  position: absolute;\n  margin-left: 25%;\n  margin-top: 5rem;\n  font-size: 3.5em;\n  z-index: 1;\n}\n.fixed-position-image {\n  position: absolute;\n  margin-left: 25%;\n  margin-top: 10rem;\n  font-size: 3.5em;\n  width: 250px;\n  z-index: 1;\n}\n.fixed-position-jumbo {\n  margin-left: 25%;\n  margin-top: 10rem;\n  font-size: 3.5em;\n  width: 60vw;\n}\n", ""]);
 
 // exports
 
@@ -163,68 +152,40 @@ var render = function() {
             "v-card",
             { attrs: { flat: "" } },
             [
-              _c(
-                "v-sheet",
-                [
-                  _vm.$vuetify.breakpoint.lgAndUp
-                    ? _c(
-                        "div",
-                        { staticStyle: { "margin-top": "-8% !important" } },
-                        [
-                          _c(
-                            "h2",
-                            { staticClass: "text-center fixed-position-text" },
-                            [_vm._v("Welcome to")]
-                          ),
-                          _vm._v(" "),
-                          _c("v-img", {
-                            staticClass: "fixed-position-image",
-                            attrs: {
-                              src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg"),
-                              alt: "GEM (Fiji) Logo"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("v-img", {
-                            staticClass: "fixed-position-jumbo",
-                            attrs: {
-                              src: __webpack_require__(/*! ../../assets/images/home-jumbo.svg */ "./resources/assets/images/home-jumbo.svg")
-                            }
-                          })
-                        ],
-                        1
-                      )
-                    : _c(
-                        "v-row",
-                        { attrs: { justify: "center" } },
-                        [
-                          _c("v-col", { attrs: { cols: "12" } }, [
-                            _c("h2", { staticClass: "text-center" }, [
-                              _vm._v("Welcome to")
-                            ])
-                          ]),
-                          _vm._v(" "),
-                          _c(
-                            "v-col",
-                            { attrs: { cols: "12" } },
-                            [
-                              _c("v-img", {
-                                staticClass: "mx-auto",
-                                attrs: {
-                                  src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg"),
-                                  alt: "GEM (Fiji) Logo",
-                                  width: "150"
-                                }
-                              })
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                ],
-                1
-              ),
+              _c("v-sheet", [
+                _vm.$vuetify.breakpoint.lgAndUp
+                  ? _c(
+                      "div",
+                      {
+                        staticClass: "my-auto",
+                        staticStyle: { "margin-top": "-8% !important" }
+                      },
+                      [
+                        _c(
+                          "h2",
+                          { staticClass: "text-center fixed-position-text" },
+                          [_vm._v("Welcome to")]
+                        ),
+                        _vm._v(" "),
+                        _c("v-img", {
+                          staticClass: "fixed-position-image",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg"),
+                            alt: "GEM (Fiji) Logo"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("v-img", {
+                          staticClass: "fixed-position-jumbo",
+                          attrs: {
+                            src: __webpack_require__(/*! ../../assets/images/home-jumbo.svg */ "./resources/assets/images/home-jumbo.svg")
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  : _vm._e()
+              ]),
               _vm._v(" "),
               _c("v-divider"),
               _vm._v(" "),
@@ -238,12 +199,6 @@ var render = function() {
               ),
               _vm._v(" "),
               _c("v-card-text", [
-                _c("p", { staticClass: "text-justify" }, [
-                  _vm._v(
-                    "\n          GEM (Fiji) Limited, formerly called Graphics Equipments Limited was established in 1972 with a vision of reaching out to customers and providing business solutions. We are a unique family business providing business solutions for organizations to be more efficient, improve performance and provide better results. We work with organizations in every industry in the public and private sectors and of every size from start-ups to multinationals.\n        "
-                  )
-                ]),
-                _vm._v(" "),
                 _c("p", { staticClass: "text-justify" }, [
                   _vm._v(
                     "\n          GEM (Fiji) Limited, formerly called Graphics Equipments Limited was established in 1972 with a vision of reaching out to customers and providing business solutions. We are a unique family business providing business solutions for organizations to be more efficient, improve performance and provide better results. We work with organizations in every industry in the public and private sectors and of every size from start-ups to multinationals.\n        "
@@ -426,7 +381,7 @@ module.exports = "/images/home-it.svg?42ab0a60f537f98d1cf961ddedc5a34d";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/home-jumbo.svg?a62fae30c0db5d0800283423395cdae4";
+module.exports = "/images/home-jumbo.svg?e6807a8ace652d5cecabc6cda22157af";
 
 /***/ }),
 

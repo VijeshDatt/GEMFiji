@@ -99372,7 +99372,7 @@ var generic = {
       phoneRules: [function (v) {
         return !!v || 'Number is required';
       }, function (v) {
-        return /[0-9]{7}/.test(v) || 'Not a valid mobile number';
+        return /(?:[0-9]{3})[0-9]{7}/.test(v) || 'Not a valid mobile number';
       }],
       checkRules: [function (v) {
         return !!v || 'You must agree to continue!';

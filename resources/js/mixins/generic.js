@@ -9,7 +9,7 @@ export const generic = {
       ],
       phoneRules: [
         v => !!v || 'Number is required',
-        v => /[0-9]{7}/.test(v) || 'Not a valid mobile number',
+        v => /(?:[0-9]{3})[0-9]{7}/.test(v) || 'Not a valid mobile number',
       ],
       checkRules: [v => !!v || 'You must agree to continue!',],
       arrayRules: [

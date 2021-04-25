@@ -3,28 +3,17 @@
     <v-container>
       <v-card flat>
         <v-sheet>
-          <div style="margin-top: -8% !important;" v-if="$vuetify.breakpoint.lgAndUp">
+          <div style="margin-top: -8% !important;" v-if="$vuetify.breakpoint.lgAndUp" class="my-auto">
             <h2 class="text-center fixed-position-text">Welcome to</h2>
             <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" alt="GEM (Fiji) Logo" class="fixed-position-image"></v-img>
             <v-img :src="require('../../assets/images/home-jumbo.svg')" class="fixed-position-jumbo"></v-img>
           </div>
-          <v-row v-else justify="center">
-            <v-col cols="12">
-              <h2 class="text-center">Welcome to</h2>
-            </v-col>
-            <v-col cols="12">
-              <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" alt="GEM (Fiji) Logo" width="150" class="mx-auto"></v-img>
-            </v-col>
-          </v-row>
         </v-sheet>
         <v-divider></v-divider>
         <v-card-title class="d-flex justify-center" id="aboutus">
           <h1>About Us</h1>
         </v-card-title>
         <v-card-text>
-          <p class="text-justify">
-            GEM (Fiji) Limited, formerly called Graphics Equipments Limited was established in 1972 with a vision of reaching out to customers and providing business solutions. We are a unique family business providing business solutions for organizations to be more efficient, improve performance and provide better results. We work with organizations in every industry in the public and private sectors and of every size from start-ups to multinationals.
-          </p>
           <p class="text-justify">
             GEM (Fiji) Limited, formerly called Graphics Equipments Limited was established in 1972 with a vision of reaching out to customers and providing business solutions. We are a unique family business providing business solutions for organizations to be more efficient, improve performance and provide better results. We work with organizations in every industry in the public and private sectors and of every size from start-ups to multinationals.
           </p>
@@ -84,30 +73,25 @@ export default {
 <style>
 .fixed-position-text {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 20%;
-  margin-top: 10rem;
+  margin-left: 25%;
+  margin-top: 5rem;
   font-size: 3.5em;
   z-index: 1;
 }
 
 .fixed-position-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 20%;
-  margin-top: 15rem;
+  margin-left: 25%;
+  margin-top: 10rem;
   font-size: 3.5em;
+  width: 250px;
   z-index: 1;
 }
 
 .fixed-position-jumbo {
-  top: 0;
-  right: 0;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-top: 10rem;
   font-size: 3.5em;
-  width: 70vw;
+  width: 60vw;
 }
 </style>

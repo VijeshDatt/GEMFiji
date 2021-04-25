@@ -26,7 +26,7 @@
                         <v-text-field v-model="form.full_name" label="Full Name*" :rules="fieldRules" filled counter="255" maxlength="255"></v-text-field>
                       </v-col>
                       <v-col cols="12" md="4">
-                        <v-text-field v-model="form.mobile_number" label="Mobile Number*" :rules="phoneRules" v-mask="'#######'" filled counter="7"></v-text-field>
+                        <v-text-field v-model="form.mobile_number" label="Mobile Number*" :rules="phoneRules" v-mask="'##########'" filled counter="7"></v-text-field>
                       </v-col>
                       <v-col cols="12" md="4">
                         <v-text-field v-model="form.email_address" label="Email Address*" :rules="emailRules" filled counter="255" maxlengt="255"></v-text-field>

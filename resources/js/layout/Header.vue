@@ -6,7 +6,7 @@
         <v-icon>mdi-menu</v-icon>
       </v-btn>
       <v-toolbar-title v-if="$vuetify.breakpoint.mdAndUp">
-        <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" max-height="50px" max-width="75%" contain @click="$router.push('/')" v-if="logoCheck"></v-img>
+        <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" max-height="50px" max-width="75%" contain @click="$route.name != 'Home' ? $router.push({ name: 'Home' }) : $vuetify.goTo(0)" v-if="logoCheck" style="cursor: pointer;"></v-img>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">

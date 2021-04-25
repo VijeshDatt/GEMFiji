@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- Header -->
-    <Header :visible="visible"></Header>
+    <Header :visible="visible" @message="message"></Header>
     <!-- End of header -->
     <!-- Main component -->
     <v-main style="overflow-x: hidden" v-scroll="onScroll">
@@ -19,7 +19,7 @@
     <Footer></Footer>
     <!-- End of Footer -->
     <!-- Snackbar for extra information -->
-    <v-snackbar v-model="snackbar" elevation="12" rounded="lg" transition="slide">
+    <v-snackbar v-model="snackbar" elevation="12" rounded="lg" transition="slide-y-transition" top text outlined :color="color">
       {{ text }}
       <template v-slot:action="{ attrs }">
         <v-btn color="red lighten-1" icon v-bind="attrs" @click="snackbar = false">
@@ -45,6 +45,7 @@ export default {
       visible: null,
       snackbar: false,
       text: '',
+      color: '',
       title: '',
       scrollPosition: null,
       // routeCheck: false,
@@ -67,11 +68,12 @@ export default {
       this.visible = this.scrollPosition > 200;
     },
 
-    message(value) {
+    message(...args) {
       this.snackbar = false;
       this.$nextTick(function () {
         this.snackbar = true;
-        this.text = value;
+        this.text = args[0];
+        this.color = `${args[1]}`;
       });
     },
   },

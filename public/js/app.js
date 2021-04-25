@@ -39647,134 +39647,143 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c(
-        "v-navigation-drawer",
-        {
-          attrs: { app: "" },
-          scopedSlots: _vm._u([
+      _vm.$vuetify.breakpoint.smAndDown
+        ? _c(
+            "v-navigation-drawer",
             {
-              key: "prepend",
-              fn: function() {
-                return [
-                  _c("div", { staticClass: "pa-6" }, [
-                    _c("img", {
-                      attrs: {
-                        src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg")
-                      }
-                    })
-                  ])
-                ]
-              },
-              proxy: true
-            }
-          ]),
-          model: {
-            value: _vm.drawer,
-            callback: function($$v) {
-              _vm.drawer = $$v
+              attrs: { app: "" },
+              scopedSlots: _vm._u(
+                [
+                  {
+                    key: "prepend",
+                    fn: function() {
+                      return [
+                        _c("div", { staticClass: "pa-6" }, [
+                          _c("img", {
+                            attrs: {
+                              src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg")
+                            }
+                          })
+                        ])
+                      ]
+                    },
+                    proxy: true
+                  }
+                ],
+                null,
+                false,
+                1180058191
+              ),
+              model: {
+                value: _vm.drawer,
+                callback: function($$v) {
+                  _vm.drawer = $$v
+                },
+                expression: "drawer"
+              }
             },
-            expression: "drawer"
-          }
-        },
-        [
-          _vm._v(" "),
-          _c("v-divider"),
-          _vm._v(" "),
-          _c(
-            "v-list",
-            { attrs: { dense: "", nav: "" } },
             [
-              _c(
-                "v-list-item",
-                {
-                  attrs: {
-                    "active-class": "primary--text",
-                    exact: "",
-                    to: { name: "Home" }
-                  }
-                },
-                [
-                  _c(
-                    "v-list-item-icon",
-                    [_c("v-icon", [_vm._v("mdi-home")])],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list-item-content",
-                    [_c("v-list-item-title", [_vm._v("Home")])],
-                    1
-                  )
-                ],
-                1
-              ),
+              _vm._v(" "),
+              _c("v-divider"),
               _vm._v(" "),
               _c(
-                "v-list-item",
-                {
-                  attrs: {
-                    "active-class": "primary--text",
-                    to: { name: "News" }
-                  }
-                },
+                "v-list",
+                { attrs: { dense: "", nav: "" } },
                 [
                   _c(
-                    "v-list-item-icon",
-                    [_c("v-icon", [_vm._v("mdi-newspaper")])],
+                    "v-list-item",
+                    {
+                      attrs: {
+                        "active-class": "primary--text",
+                        exact: "",
+                        to: { name: "Home" }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-list-item-icon",
+                        [_c("v-icon", [_vm._v("mdi-home")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-item-content",
+                        [_c("v-list-item-title", [_vm._v("Home")])],
+                        1
+                      )
+                    ],
                     1
                   ),
                   _vm._v(" "),
                   _c(
-                    "v-list-item-content",
-                    [_c("v-list-item-title", [_vm._v("News")])],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-list-item",
-                {
-                  attrs: {
-                    "active-class": "primary--text",
-                    to: { name: "Careers" }
-                  }
-                },
-                [
-                  _c(
-                    "v-list-item-icon",
-                    [_c("v-icon", [_vm._v("mdi-account-tie")])],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "v-list-item-content",
-                    [_c("v-list-item-title", [_vm._v("Careers")])],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-list-item",
-                {
-                  attrs: {
-                    "active-class": "primary--text",
-                    to: { name: "Contact Us" }
-                  }
-                },
-                [
-                  _c(
-                    "v-list-item-icon",
-                    [_c("v-icon", [_vm._v("mdi-message-question")])],
+                    "v-list-item",
+                    {
+                      attrs: {
+                        "active-class": "primary--text",
+                        to: { name: "News" }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-list-item-icon",
+                        [_c("v-icon", [_vm._v("mdi-newspaper")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-item-content",
+                        [_c("v-list-item-title", [_vm._v("News")])],
+                        1
+                      )
+                    ],
                     1
                   ),
                   _vm._v(" "),
                   _c(
-                    "v-list-item-content",
-                    [_c("v-list-item-title", [_vm._v("Contact Us")])],
+                    "v-list-item",
+                    {
+                      attrs: {
+                        "active-class": "primary--text",
+                        to: { name: "Careers" }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-list-item-icon",
+                        [_c("v-icon", [_vm._v("mdi-account-tie")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-item-content",
+                        [_c("v-list-item-title", [_vm._v("Careers")])],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item",
+                    {
+                      attrs: {
+                        "active-class": "primary--text",
+                        to: { name: "Contact Us" }
+                      }
+                    },
+                    [
+                      _c(
+                        "v-list-item-icon",
+                        [_c("v-icon", [_vm._v("mdi-message-question")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-item-content",
+                        [_c("v-list-item-title", [_vm._v("Contact Us")])],
+                        1
+                      )
+                    ],
                     1
                   )
                 ],
@@ -39783,9 +39792,7 @@ var render = function() {
             ],
             1
           )
-        ],
-        1
-      )
+        : _vm._e()
     ],
     1
   )

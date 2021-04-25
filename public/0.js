@@ -278,7 +278,7 @@ var render = function() {
                       _c(
                         "v-col",
                         {
-                          staticClass: "text-end",
+                          staticClass: "text-md-end text-center",
                           attrs: { cols: "12", md: "6" }
                         },
                         [
@@ -326,28 +326,35 @@ var render = function() {
                           )
                         : _vm._e(),
                       _vm._v(" "),
-                      _c("v-col", { attrs: { cols: "12", md: "6" } }, [
-                        _c("h1", { staticClass: "py-4" }, [
-                          _vm._v("GEM IT Solutions")
-                        ]),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "text-justify" }, [
-                          _vm._v(
-                            "GEM IT Solutions is the IT arm of GEM (Fiji) Limited. GEM IT Solutions primary objective is to help our customers achieve their business goals with the application of pertinent technology solutions. Our business model combines industry leading technology accreditations, diligent account managers, supported by a large team of experienced technical consultants and engineers. Our success has come from providing our clients with unrivalled technical expertise along with extremely high service levels."
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c("p", { staticClass: "text-justify" }, [
-                          _vm._v(
-                            "GEM IT Technical Engineers have a wealth of experience in solution design and deployment, and have the confidence in technology required to deliver integrated solutions that meet your business demands. With our comprehensive portfolio of leading technology partners, our in-house Dell-certified expert team of technical resource are here to meet your day-to-day business challenges."
-                          )
-                        ])
-                      ]),
+                      _c(
+                        "v-col",
+                        {
+                          staticClass: "text-md-start text-center",
+                          attrs: { cols: "12", md: "6" }
+                        },
+                        [
+                          _c("h1", { staticClass: "py-4" }, [
+                            _vm._v("GEM IT Solutions")
+                          ]),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "text-justify" }, [
+                            _vm._v(
+                              "GEM IT Solutions is the IT arm of GEM (Fiji) Limited. GEM IT Solutions primary objective is to help our customers achieve their business goals with the application of pertinent technology solutions. Our business model combines industry leading technology accreditations, diligent account managers, supported by a large team of experienced technical consultants and engineers. Our success has come from providing our clients with unrivalled technical expertise along with extremely high service levels."
+                            )
+                          ]),
+                          _vm._v(" "),
+                          _c("p", { staticClass: "text-justify" }, [
+                            _vm._v(
+                              "GEM IT Technical Engineers have a wealth of experience in solution design and deployment, and have the confidence in technology required to deliver integrated solutions that meet your business demands. With our comprehensive portfolio of leading technology partners, our in-house Dell-certified expert team of technical resource are here to meet your day-to-day business challenges."
+                            )
+                          ])
+                        ]
+                      ),
                       _vm._v(" "),
                       _c(
                         "v-col",
                         {
-                          staticClass: "text-end",
+                          staticClass: "text-md-end text-center",
                           attrs: { cols: "12", md: "6" }
                         },
                         [

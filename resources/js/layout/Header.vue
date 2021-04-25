@@ -45,7 +45,7 @@
       </v-toolbar-items>
     </v-app-bar>
 
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer app v-model="drawer" v-if="$vuetify.breakpoint.smAndDown">
       <template v-slot:prepend>
         <div class="pa-6">
           <img :src="require('../../assets/images/logo/gem-fiji-svg.svg')">

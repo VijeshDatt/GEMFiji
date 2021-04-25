@@ -13,7 +13,7 @@
 
 <body>
   <div id="app">
-    <App></App>
+    <App ></App>
   </div>
 
   <script src="/js/app.js"></script>

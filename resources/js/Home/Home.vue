@@ -3,17 +3,17 @@
     <v-container>
       <v-card flat>
         <v-sheet>
-          <div style="margin-top: -8% !important;" v-if="$vuetify.breakpoint.mdAndUp">
+          <div style="margin-top: -8% !important;" v-if="$vuetify.breakpoint.lgAndUp">
             <h2 class="text-center fixed-position-text">Welcome to</h2>
-            <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" alt="GEM (Fiji) Logo" class="fixed-position-image" contain></v-img>
+            <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" alt="GEM (Fiji) Logo" class="fixed-position-image"></v-img>
             <v-img :src="require('../../assets/images/home-jumbo.svg')" class="fixed-position-jumbo"></v-img>
           </div>
-          <v-row v-else>
+          <v-row v-else justify="center">
             <v-col cols="12">
               <h2 class="text-center">Welcome to</h2>
             </v-col>
             <v-col cols="12">
-              <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" alt="GEM (Fiji) Logo" width="150" style="margin-left: 32%" contain></v-img>
+              <v-img :src="require('../../assets/images/logo/gem-fiji-svg.svg')" alt="GEM (Fiji) Logo" width="150" class="mx-auto"></v-img>
             </v-col>
           </v-row>
         </v-sheet>

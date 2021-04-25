@@ -85,6 +85,10 @@ export default {
 </script>
 
 <style>
+[v-cloak] {
+  display: none;
+}
+
 h1,
 h2,
 h3,

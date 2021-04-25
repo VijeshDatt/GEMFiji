@@ -2291,6 +2291,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -6795,7 +6836,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Economica\", sans-serif;\n  font-weight: 400;\n}\n.v-application {\n  font-family: \"Inter\", sans-serif !important;\n  /* font-weight: 300 !important; */\n  word-break: normal !important;\n}\n.bg {\n  /* background-image: url(\"../../assets/images/misc/funky-lines.png\"); */\n  background-repeat: repeat;\n}\nlabel.theme--dark + input:-webkit-autofill,\ninput:-webkit-autofill:hover,\ninput:-webkit-autofill:focus,\ninput:-webkit-autofill:active {\n  -webkit-transition: background-color 5000s ease-in-out 0s;\n  transition: background-color 5000s ease-in-out 0s;\n  -webkit-text-fill-color: #fff !important; /* inherit only works in Safari */\n  -webkit-text-size-adjust: inherit !important;\n}\nlabel.theme--light + input:-webkit-autofill,\ninput:-webkit-autofill:hover,\ninput:-webkit-autofill:focus,\ninput:-webkit-autofill:active {\n  -webkit-transition: background-color 5000s ease-in-out 0s;\n  transition: background-color 5000s ease-in-out 0s;\n  -webkit-text-fill-color: #000 !important; /* inherit only works in Safari */\n  -webkit-text-size-adjust: inherit !important;\n}\n\n/* When dark theme, then make keychain icon white */\nlabel.theme--dark + input::-webkit-credentials-auto-fill-button {\n  background-color: #fff !important;\n}\n\n/* Hide credentials-auto-fill-button in password inputs, only visible on other inputs */\ninput[type=\"password\"]::-webkit-credentials-auto-fill-button {\n  visibility: hidden;\n  display: none !important;\n  pointer-events: none;\n}\n\n/* Chrome, Safari, Edge, Opera */\ninput::-webkit-outer-spin-button,\ninput::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Firefox */\ninput[type=\"number\"] {\n  -moz-appearance: textfield;\n}\n.slide-enter-active {\n  -webkit-animation: slide-in 150ms ease-out forwards;\n          animation: slide-in 150ms ease-out forwards;\n}\n.slide-leave-active {\n  -webkit-animation: slide-out 150ms ease-out forwards;\n          animation: slide-out 150ms ease-out forwards;\n}\n@-webkit-keyframes slide-in {\nfrom {\n    transform: translateY(10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0);\n    opacity: 1;\n}\n}\n@keyframes slide-in {\nfrom {\n    transform: translateY(10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0);\n    opacity: 1;\n}\n}\n@-webkit-keyframes slide-out {\nfrom {\n    transform: translateY(0);\n    opacity: 1;\n}\nto {\n    transform: translateY(-10px);\n    opacity: 0;\n}\n}\n@keyframes slide-out {\nfrom {\n    transform: translateY(0);\n    opacity: 1;\n}\nto {\n    transform: translateY(-10px);\n    opacity: 0;\n}\n}\n.slidereverse-enter-active {\n  -webkit-animation: slide-in-reverse 150ms ease-in-out forwards;\n          animation: slide-in-reverse 150ms ease-in-out forwards;\n}\n.slidereverse-leave-active {\n  -webkit-animation: slide-out-reverse 200ms ease-in-out forwards;\n          animation: slide-out-reverse 200ms ease-in-out forwards;\n}\n@-webkit-keyframes slide-in-reverse {\nfrom {\n    transform: translateY(-10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0px);\n    opacity: 1;\n}\n}\n@keyframes slide-in-reverse {\nfrom {\n    transform: translateY(-10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0px);\n    opacity: 1;\n}\n}\n@-webkit-keyframes slide-out-reverse {\nfrom {\n    transform: translateY(0px);\n    opacity: 1;\n}\nto {\n    transform: translateY(10px);\n    opacity: 0;\n}\n}\n@keyframes slide-out-reverse {\nfrom {\n    transform: translateY(0px);\n    opacity: 1;\n}\nto {\n    transform: translateY(10px);\n    opacity: 0;\n}\n}\n.v-text-field--filled .v-label--active,\n.v-text-field--full-width .v-label--active {\n  transform: translateY(-10px) scale(0.75) !important;\n}\n", ""]);
+exports.push([module.i, "\n[v-cloak] {\n  display: none;\n}\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n  font-family: \"Economica\", sans-serif;\n  font-weight: 400;\n}\n.v-application {\n  font-family: \"Inter\", sans-serif !important;\n  /* font-weight: 300 !important; */\n  word-break: normal !important;\n}\n.bg {\n  /* background-image: url(\"../../assets/images/misc/funky-lines.png\"); */\n  background-repeat: repeat;\n}\nlabel.theme--dark + input:-webkit-autofill,\ninput:-webkit-autofill:hover,\ninput:-webkit-autofill:focus,\ninput:-webkit-autofill:active {\n  -webkit-transition: background-color 5000s ease-in-out 0s;\n  transition: background-color 5000s ease-in-out 0s;\n  -webkit-text-fill-color: #fff !important; /* inherit only works in Safari */\n  -webkit-text-size-adjust: inherit !important;\n}\nlabel.theme--light + input:-webkit-autofill,\ninput:-webkit-autofill:hover,\ninput:-webkit-autofill:focus,\ninput:-webkit-autofill:active {\n  -webkit-transition: background-color 5000s ease-in-out 0s;\n  transition: background-color 5000s ease-in-out 0s;\n  -webkit-text-fill-color: #000 !important; /* inherit only works in Safari */\n  -webkit-text-size-adjust: inherit !important;\n}\n\n/* When dark theme, then make keychain icon white */\nlabel.theme--dark + input::-webkit-credentials-auto-fill-button {\n  background-color: #fff !important;\n}\n\n/* Hide credentials-auto-fill-button in password inputs, only visible on other inputs */\ninput[type=\"password\"]::-webkit-credentials-auto-fill-button {\n  visibility: hidden;\n  display: none !important;\n  pointer-events: none;\n}\n\n/* Chrome, Safari, Edge, Opera */\ninput::-webkit-outer-spin-button,\ninput::-webkit-inner-spin-button {\n  -webkit-appearance: none;\n  margin: 0;\n}\n\n/* Firefox */\ninput[type=\"number\"] {\n  -moz-appearance: textfield;\n}\n.slide-enter-active {\n  -webkit-animation: slide-in 150ms ease-out forwards;\n          animation: slide-in 150ms ease-out forwards;\n}\n.slide-leave-active {\n  -webkit-animation: slide-out 150ms ease-out forwards;\n          animation: slide-out 150ms ease-out forwards;\n}\n@-webkit-keyframes slide-in {\nfrom {\n    transform: translateY(10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0);\n    opacity: 1;\n}\n}\n@keyframes slide-in {\nfrom {\n    transform: translateY(10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0);\n    opacity: 1;\n}\n}\n@-webkit-keyframes slide-out {\nfrom {\n    transform: translateY(0);\n    opacity: 1;\n}\nto {\n    transform: translateY(-10px);\n    opacity: 0;\n}\n}\n@keyframes slide-out {\nfrom {\n    transform: translateY(0);\n    opacity: 1;\n}\nto {\n    transform: translateY(-10px);\n    opacity: 0;\n}\n}\n.slidereverse-enter-active {\n  -webkit-animation: slide-in-reverse 150ms ease-in-out forwards;\n          animation: slide-in-reverse 150ms ease-in-out forwards;\n}\n.slidereverse-leave-active {\n  -webkit-animation: slide-out-reverse 200ms ease-in-out forwards;\n          animation: slide-out-reverse 200ms ease-in-out forwards;\n}\n@-webkit-keyframes slide-in-reverse {\nfrom {\n    transform: translateY(-10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0px);\n    opacity: 1;\n}\n}\n@keyframes slide-in-reverse {\nfrom {\n    transform: translateY(-10px);\n    opacity: 0;\n}\nto {\n    transform: translateY(0px);\n    opacity: 1;\n}\n}\n@-webkit-keyframes slide-out-reverse {\nfrom {\n    transform: translateY(0px);\n    opacity: 1;\n}\nto {\n    transform: translateY(10px);\n    opacity: 0;\n}\n}\n@keyframes slide-out-reverse {\nfrom {\n    transform: translateY(0px);\n    opacity: 1;\n}\nto {\n    transform: translateY(10px);\n    opacity: 0;\n}\n}\n.v-text-field--filled .v-label--active,\n.v-text-field--full-width .v-label--active {\n  transform: translateY(-10px) scale(0.75) !important;\n}\n", ""]);
 
 // exports
 
@@ -39378,7 +39419,7 @@ var render = function() {
                   attrs: { icon: "", color: "primary" },
                   on: {
                     click: function($event) {
-                      _vm.drawer = !_vm.drawer
+                      _vm.drawer = true
                     }
                   }
                 },
@@ -39602,6 +39643,146 @@ var render = function() {
                 1
               )
             : _vm._e()
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "v-navigation-drawer",
+        {
+          attrs: { app: "" },
+          scopedSlots: _vm._u([
+            {
+              key: "prepend",
+              fn: function() {
+                return [
+                  _c("div", { staticClass: "pa-6" }, [
+                    _c("img", {
+                      attrs: {
+                        src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg")
+                      }
+                    })
+                  ])
+                ]
+              },
+              proxy: true
+            }
+          ]),
+          model: {
+            value: _vm.drawer,
+            callback: function($$v) {
+              _vm.drawer = $$v
+            },
+            expression: "drawer"
+          }
+        },
+        [
+          _vm._v(" "),
+          _c("v-divider"),
+          _vm._v(" "),
+          _c(
+            "v-list",
+            { attrs: { dense: "", nav: "" } },
+            [
+              _c(
+                "v-list-item",
+                {
+                  attrs: {
+                    "active-class": "primary--text",
+                    exact: "",
+                    to: { name: "Home" }
+                  }
+                },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [_c("v-icon", [_vm._v("mdi-home")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item-content",
+                    [_c("v-list-item-title", [_vm._v("Home")])],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-list-item",
+                {
+                  attrs: {
+                    "active-class": "primary--text",
+                    to: { name: "News" }
+                  }
+                },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [_c("v-icon", [_vm._v("mdi-newspaper")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item-content",
+                    [_c("v-list-item-title", [_vm._v("News")])],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-list-item",
+                {
+                  attrs: {
+                    "active-class": "primary--text",
+                    to: { name: "Careers" }
+                  }
+                },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [_c("v-icon", [_vm._v("mdi-account-tie")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item-content",
+                    [_c("v-list-item-title", [_vm._v("Careers")])],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-list-item",
+                {
+                  attrs: {
+                    "active-class": "primary--text",
+                    to: { name: "Contact Us" }
+                  }
+                },
+                [
+                  _c(
+                    "v-list-item-icon",
+                    [_c("v-icon", [_vm._v("mdi-message-question")])],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item-content",
+                    [_c("v-list-item-title", [_vm._v("Contact Us")])],
+                    1
+                  )
+                ],
+                1
+              )
+            ],
+            1
+          )
         ],
         1
       )

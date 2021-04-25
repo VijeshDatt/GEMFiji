@@ -205,38 +205,53 @@ var render = function() {
                         [
                           _c(
                             "v-row",
-                            { attrs: { justify: "center", align: "center" } },
+                            {
+                              attrs: {
+                                justify: "center",
+                                align: "center",
+                                dense: ""
+                              }
+                            },
                             [
-                              _c("v-col", { attrs: { md: "4" } }),
-                              _vm._v(" "),
                               _c(
-                                "v-col",
-                                { attrs: { cols: "12", md: "4" } },
+                                "v-row",
+                                {
+                                  attrs: {
+                                    justify: "center",
+                                    align: "center",
+                                    dense: ""
+                                  }
+                                },
                                 [
-                                  _c("v-select", {
-                                    attrs: {
-                                      items: _vm.categoryItems,
-                                      label: "Choose a category",
-                                      "item-text": "text",
-                                      "item-value": "value",
-                                      "menu-props": _vm.menuProps,
-                                      rules: _vm.fieldRules,
-                                      filled: "",
-                                      clearable: ""
-                                    },
-                                    model: {
-                                      value: _vm.form.category,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "category", $$v)
-                                      },
-                                      expression: "form.category"
-                                    }
-                                  })
+                                  _c(
+                                    "v-col",
+                                    { attrs: { cols: "12", md: "4" } },
+                                    [
+                                      _c("v-select", {
+                                        attrs: {
+                                          items: _vm.categoryItems,
+                                          label: "Choose a Category*",
+                                          "item-text": "text",
+                                          "item-value": "value",
+                                          "menu-props": _vm.menuProps,
+                                          rules: _vm.fieldRules,
+                                          filled: "",
+                                          clearable: ""
+                                        },
+                                        model: {
+                                          value: _vm.form.category,
+                                          callback: function($$v) {
+                                            _vm.$set(_vm.form, "category", $$v)
+                                          },
+                                          expression: "form.category"
+                                        }
+                                      })
+                                    ],
+                                    1
+                                  )
                                 ],
                                 1
                               ),
-                              _vm._v(" "),
-                              _c("v-col", { attrs: { md: "4" } }),
                               _vm._v(" "),
                               _c("v-expand-transition", [
                                 _c(

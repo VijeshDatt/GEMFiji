@@ -166,7 +166,7 @@ var render = function() {
               _c(
                 "v-sheet",
                 [
-                  _vm.$vuetify.breakpoint.mdAndUp
+                  _vm.$vuetify.breakpoint.lgAndUp
                     ? _c(
                         "div",
                         { staticStyle: { "margin-top": "-8% !important" } },
@@ -181,8 +181,7 @@ var render = function() {
                             staticClass: "fixed-position-image",
                             attrs: {
                               src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg"),
-                              alt: "GEM (Fiji) Logo",
-                              contain: ""
+                              alt: "GEM (Fiji) Logo"
                             }
                           }),
                           _vm._v(" "),
@@ -197,6 +196,7 @@ var render = function() {
                       )
                     : _c(
                         "v-row",
+                        { attrs: { justify: "center" } },
                         [
                           _c("v-col", { attrs: { cols: "12" } }, [
                             _c("h2", { staticClass: "text-center" }, [
@@ -209,12 +209,11 @@ var render = function() {
                             { attrs: { cols: "12" } },
                             [
                               _c("v-img", {
-                                staticStyle: { "margin-left": "32%" },
+                                staticClass: "mx-auto",
                                 attrs: {
                                   src: __webpack_require__(/*! ../../assets/images/logo/gem-fiji-svg.svg */ "./resources/assets/images/logo/gem-fiji-svg.svg"),
                                   alt: "GEM (Fiji) Logo",
-                                  width: "150",
-                                  contain: ""
+                                  width: "150"
                                 }
                               })
                             ],

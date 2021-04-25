@@ -2,7 +2,7 @@
   <div>
     <v-app-bar app color="white">
       <v-progress-linear absolute bottom color="primary" :active="loadingBar" indeterminate></v-progress-linear>
-      <v-btn icon color="primary" @click="drawer = !drawer" v-if="$vuetify.breakpoint.smAndDown">
+      <v-btn icon color="primary" @click="drawer = true" v-if="$vuetify.breakpoint.smAndDown">
         <v-icon>mdi-menu</v-icon>
       </v-btn>
       <v-toolbar-title v-if="$vuetify.breakpoint.mdAndUp">
@@ -45,13 +45,54 @@
       </v-toolbar-items>
     </v-app-bar>
 
-    <!-- <v-navigation-drawer app v-model="drawer" temporary class="deep-purple accent-4" dark>
-      <template v-slot:append>
-        <div class="pa-2">
-          <v-btn block>Logout</v-btn>
+    <v-navigation-drawer app v-model="drawer">
+      <template v-slot:prepend>
+        <div class="pa-6">
+          <img :src="require('../../assets/images/logo/gem-fiji-svg.svg')">
         </div>
       </template>
-    </v-navigation-drawer> -->
+
+      <v-divider></v-divider>
+
+      <v-list dense nav>
+        <v-list-item active-class="primary--text" exact :to="{ name: 'Home' }">
+          <v-list-item-icon>
+            <v-icon>mdi-home</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item active-class="primary--text" :to="{ name: 'News' }">
+          <v-list-item-icon>
+            <v-icon>mdi-newspaper</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>News</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item active-class="primary--text" :to="{ name: 'Careers' }">
+          <v-list-item-icon>
+            <v-icon>mdi-account-tie</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Careers</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item active-class="primary--text" :to="{ name: 'Contact Us' }">
+          <v-list-item-icon>
+            <v-icon>mdi-message-question</v-icon>
+          </v-list-item-icon>
+
+          <v-list-item-content>
+            <v-list-item-title>Contact Us</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 

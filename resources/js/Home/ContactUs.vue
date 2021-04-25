@@ -12,13 +12,13 @@
         <v-card-text class="justify-center">
           <v-container :style="[$vuetify.breakpoint.mdAndDown ? {'width': '100%'} : {'width': '60%'}]">
             <v-form ref="form" v-model="valid" lazy-validation>
-              <v-row justify="center" align="center">
-                <v-col md="4"></v-col>
-                <v-col cols="12" md="4">
-                  <!-- <v-text-field v-model="form.category" filled label="Choose a category"></v-text-field> -->
-                  <v-select v-model="form.category" :items="categoryItems" label="Choose a category" item-text="text" item-value="value" :menu-props="menuProps" :rules="fieldRules" filled clearable></v-select>
-                </v-col>
-                <v-col md="4"></v-col>
+              <v-row justify="center" align="center" dense>
+                <v-row justify="center" align="center" dense>
+                  <v-col cols="12" md="4">
+                    <!-- <v-text-field v-model="form.category" filled label="Choose a category"></v-text-field> -->
+                    <v-select v-model="form.category" :items="categoryItems" label="Choose a Category*" item-text="text" item-value="value" :menu-props="menuProps" :rules="fieldRules" filled clearable></v-select>
+                  </v-col>
+                </v-row>
                 <v-expand-transition>
                   <div v-show="form.category">
                     <v-row justify="center" align="center" dense>
